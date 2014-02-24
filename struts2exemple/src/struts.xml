@@ -49,6 +49,11 @@
     		 	<result name="success">SuccessUserImage.jsp</result>
    			  	<result name="input" type="tiles">/userimage</result>
 		</action>
+		<action name="ajaxdemo" class="src.paquet.AjaxAutocomplete">
+    		<interceptor-ref name="loggingStack"></interceptor-ref>
+    		<result name="success" type="tiles">/ajaxdemo.tiles</result>
+   			 <result type="tiles">/ajaxdemo.tiles</result>
+		</action>
 		
 	</package>
 

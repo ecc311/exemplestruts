@@ -23,8 +23,14 @@
         <put-attribute name="title" value="Customer Added" />
         <put-attribute name="body" value="/SuccessCustomer.jsp" />
     </definition>
-          <definition name="/userimage" extends="baseLayout">
+    <definition name="/userimage" extends="baseLayout">
         <put-attribute name="title" value="Carregar Imatge" />
         <put-attribute name="body" value="/UserImage.jsp" />
     </definition>
+    <definition name="/ajaxdemo.tiles" extends="baseLayout">
+        <put-attribute name="title" value="Demo Ajax" />
+        <put-attribute name="body" value="/AjaxDemo.jsp" />
+    </definition>
+    
+    
 </tiles-definitions>
