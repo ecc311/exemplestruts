@@ -7,10 +7,13 @@
     <sx:head />
 </head>
 <body>
-    <h2>Struts 2 Autocomplete (Drop down) Example!</h2>
+    <h2>Carregar Client</h2>
      
-    Country:
-    <sx:autocompleter size="1" list="countries" name="country"></sx:autocompleter>
-
+    <s:form action="customer.load" method="post" validate="true">
+    Customer:
+    <sx:autocompleter size="1" list="countries" name="namec" ></sx:autocompleter>
+    
+	<s:submit value="Carregar" align="center" />
+	</s:form>
 </body>
 </html>

@@ -31,6 +31,10 @@
         <put-attribute name="title" value="Demo Ajax" />
         <put-attribute name="body" value="/AjaxDemo.jsp" />
     </definition>
+    <definition name="/customer.load.tiles" extends="baseLayout">
+        <put-attribute name="title" value="Load Customer" />
+        <put-attribute name="body" value="/SuccessLoadCustomer.jsp" />
+    </definition>
     
     
 </tiles-definitions>

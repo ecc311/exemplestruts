@@ -6,6 +6,6 @@
 </head>
  
 <body>
-    <h2>Customer Added Successfully.</h2>
+    <h2>Client Afegit!</h2>
 </body>
 </html>

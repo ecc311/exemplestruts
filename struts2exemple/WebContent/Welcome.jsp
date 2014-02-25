@@ -6,6 +6,6 @@
 </head>
  
 <body>
-    <h2>Hola, <s:property value="username" />...!</h2><br>
+    <h2>Hola, <s:property value="username" />!</h2><br>
 </body>
 </html>

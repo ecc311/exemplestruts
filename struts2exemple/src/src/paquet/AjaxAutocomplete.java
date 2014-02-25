@@ -21,14 +21,14 @@ public class AjaxAutocomplete extends ActionSupport {
 	private String sql;
 	private String data;
     private List<String> countries;
-    private String country;
+
      
     public String execute() {
     	String datas="";
     	ArrayList<String> noms=new ArrayList<String>();
     	noms=carregardata();
     	for( int i = 0 ; i < noms.size() ; i++ ){
-    		  datas=( noms.get( i )+"," );
+    		  datas=datas+( noms.get( i )+"," );
     	}
     	data = datas.substring(0, datas.length()-1); 
         countries = new ArrayList<String>();
@@ -55,11 +55,6 @@ public class AjaxAutocomplete extends ActionSupport {
     			String ida = aux.getString("nom");
     			llista.add(ida);
     			
-    			}
-    			for(int i=0;i<llista.size();i++)
-    			{
-    				
-    				System.out.println(llista.get(i));
     			}
     			conn.close();
     		} catch (SQLException e) {
@@ -101,9 +96,7 @@ public class AjaxAutocomplete extends ActionSupport {
 		}
 	}
     
-    public String getCountry() {
-        return this.country;
-    }
+
  
     public List<String> getCountries() {
         return countries;
@@ -112,7 +105,5 @@ public class AjaxAutocomplete extends ActionSupport {
     public void setCountries(List<String> countries) {
         this.countries = countries;
     }
-    public void setCountry(String country) {
-        this.country = country;
-    }
+
 }

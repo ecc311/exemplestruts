@@ -54,6 +54,11 @@
     		<result name="success" type="tiles">/ajaxdemo.tiles</result>
    			 <result type="tiles">/ajaxdemo.tiles</result>
 		</action>
+		<action name="customer.load" class="src.paquet.LoadCustomer">
+    		<interceptor-ref name="loggingStack"></interceptor-ref>
+    		<result name="success" type="tiles">/customer.load.tiles</result>
+   			 <result type="tiles">/customer.load.tiles</result>
+		</action>
 		
 	</package>
 
