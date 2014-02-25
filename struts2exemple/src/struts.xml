@@ -31,7 +31,7 @@
 			<result name="error">Login.jsp</result>
 		</action>
 		<action name="customer" class="src.paquet.CustomerAction">
-			<result name="success" type="tiles">/customer.success.tiles</result>
+			<result name="success" type="tiles">/customer.validate.tiles</result>
 			<result name="input" type="tiles">/customer.tiles</result>
 		</action>
 		<action name="customer-form">
@@ -58,6 +58,10 @@
     		<interceptor-ref name="loggingStack"></interceptor-ref>
     		<result name="success" type="tiles">/customer.load.tiles</result>
    			 <result type="tiles">/customer.load.tiles</result>
+		</action>
+		<action name="customer.validate" class="src.paquet.CustomerValidate">
+			<result name="success" type="tiles">/customer.success.tiles</result>
+			<result name="input" type="tiles">/customer.tiles</result>
 		</action>
 		
 	</package>

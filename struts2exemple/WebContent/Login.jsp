@@ -1,6 +1,10 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <html>
+<style type="text/css">
+h2 { color: black;font-family:Verdana; }
+}
+</style>
 <head>
 <title>Struts 2</title>
 </head>
@@ -10,8 +14,8 @@
 <s:actionerror />
 <s:form action="login.action" method="post">
     <s:textfield name="username" key="label.username" size="20" />
-    <s:password name="password" key="label.password" size="20" />
-    <s:submit method="execute" value="Login" key="label.login" align="center" />
+    <s:password name="password" key="label.password" size="20"  />
+    <s:submit method="execute" value="Login" key="label.login" align="center" font-family="Verdana" />
 </s:form>
 </body>
 </html>

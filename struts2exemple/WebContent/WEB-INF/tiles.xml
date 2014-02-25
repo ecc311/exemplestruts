@@ -36,5 +36,10 @@
         <put-attribute name="body" value="/SuccessLoadCustomer.jsp" />
     </definition>
     
+    <definition name="/customer.validate.tiles" extends="baseLayout">
+        <put-attribute name="title" value="Validate Customer" />
+        <put-attribute name="body" value="/ValidarCustomer.jsp" />
+    </definition>
+    
     
 </tiles-definitions>
